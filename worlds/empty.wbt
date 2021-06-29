@@ -1,0 +1,41 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.9998907666805064 0.00572812674777688 -0.013625097101688827 1.5119986388891868
+  position -0.01200887488521312 2.8744592827682913 0.1983092149287803
+  follow "e-puck"
+  followType "None"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 1 1.3
+  floorTileSize 0.1 0.1
+}
+E-puck {
+  hidden translation_1 -0.026 0.02 0
+  hidden rotation_1 1 0 0 6.169631616647544
+  hidden translation_2 0.025999999999999992 0.02 0
+  hidden rotation_2 -1 0 0 4.134752244398843
+  translation 0 -3.18691e-05 0.4
+  controller "bug1_controller"
+  groundSensorsSlot [
+    Compass {
+      rotation 0 0 1 1.57
+    }
+    GPS {
+    }
+  ]
+}
+PingPongBall {
+  translation 0.3 0.0199956 -0.3
+}
+WoodenBox {
+  translation 0.1 0.05 -0.01
+  rotation 0 1 0 -1.0471996938995747
+  size 0.7 0.1 0.2
+}
